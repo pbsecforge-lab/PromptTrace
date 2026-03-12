@@ -285,17 +285,17 @@ This tool is provided for authorized forensic analysis, incident response, and s
 ## Legal & Ethics
 
 **PromptTrace is designed for:**
-- ✅ Digital forensics investigations
-- ✅ Incident response procedures
-- ✅ Security research
-- ✅ Authorized system analysis
-- ✅ Legal compliance
+-  Digital forensics investigations
+-  Incident response procedures
+-  Security research
+-  Authorized system analysis
+-  Legal compliance
 
 **NOT for:**
-- ❌ Unauthorized system access
-- ❌ Privacy violations
-- ❌ Malicious purposes
-- ❌ Unauthorized data collection
+-  Unauthorized system access
+-  Privacy violations
+-  Malicious purposes
+-  Unauthorized data collection
 
 ---
 
