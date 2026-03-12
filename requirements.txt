@@ -1,0 +1,19 @@
+# PromptTrace Requirements
+# 
+# PromptTrace uses only Python standard library modules
+# No external dependencies required!
+#
+# Minimum Python version: 3.7+
+# Tested on: Python 3.8, 3.9, 3.10, 3.11
+
+# Standard library modules used:
+# - json (JSON parsing)
+# - sqlite3 (SQLite database access)
+# - pathlib (File path handling)
+# - datetime (Timestamp operations)
+# - hashlib (SHA-256 hashing)
+# - os (Environment variables)
+# - typing (Type hints)
+
+# To verify installation:
+# python --version

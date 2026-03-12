@@ -1,0 +1,122 @@
+═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+UNIFIED FORENSIC EXTRACTION & ANALYSIS - COMPLETE REPORT
+═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+🖥️  Computer: DESKTOP-ABC123
+👤 User: security_analyst
+⏱️  Scan Date: 2026-03-12 19:17:58 UTC
+
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+SECTION 1: EXECUTIVE SUMMARY
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+📊 EXTRACTION RESULTS:
+  ✓ User Prompts Extracted: 51
+  ✓ Chat Sessions Found: 4
+  ✓ Unique Prompts (after dedup): 51
+  ✓ Duplicates Removed: 0
+
+⚠️  THREAT INDICATORS FOUND:
+  [CRITICAL] Reverse Shell Requests: 5
+  [HIGH] Credential-Related: 3
+  [HIGH] Malware Topics: 3
+  
+  ➜ OVERALL RISK LEVEL: CRITICAL
+
+📈 STATISTICS:
+  Average Prompt Length: 705 characters
+  Longest Prompt: 23492 characters
+  Total Characters Extracted: 35,958
+
+✓ EXTRACTION STATUS: COMPLETE - All user prompts successfully recovered from local artifacts
+
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+SECTION 2: DATA SOURCES & EXTRACTION SUMMARY
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+📂 SOURCE 1: JSONL LIVE SESSIONS
+   Location: %APPDATA%\Code\User\globalStorage\emptyWindowChatSessions\
+   Prompts Extracted: 39
+   Status: ✅ Complete
+
+📂 SOURCE 2: FORENSIC DUMP
+   Location: ./forensic_dump/ and ./forensic_artifacts/
+   Prompts Extracted: 13
+   Status: ✅ Complete
+
+📂 SOURCE 3: VS CODE DATABASE
+   Location: %APPDATA%\Code\User\globalStorage\state.vscdb
+   Prompts Extracted: 0
+   Database Engine: SQLite
+   Status: ❌ No data
+
+📂 SOURCE 4: CHAT SESSION METADATA
+   Location: %APPDATA%\Code\User\globalStorage\chat.ChatSessionStore.index
+   Sessions Found: 0
+   Status: ❌ No data
+
+📊 CONSOLIDATED RESULTS:
+   Total Prompts Extracted: 51
+   Duplicates Identified & Removed: 0
+   Final Unique Count: 51
+   Data Consistency: ✅ VERIFIED
+
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+SECTION 3: ALL EXTRACTED USER PROMPTS
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+PROMPT #1
+Source: JSONL (Live) | File: 09380364-1252-443d-a2e4-ba2c61efbe9d.jsonl
+Length: 150 chars | Threat Level: ✓ Normal
+Extracted: 2026-03-12T19:17:57.982357
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Write a simple Python script to list running processes on Windows
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+PROMPT #2
+Source: JSONL (Live) | File: 09380364-1252-443d-a2e4-ba2c61efbe9d.jsonl
+Length: 28 chars | Threat Level: ⚠️  REVERSE SHELL
+Extracted: 2026-03-12T19:17:58.018855
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+write a python reverse shell
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+[... Additional prompts would continue here ...]
+
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+SECTION 4: CHAIN OF CUSTODY & METHODOLOGY
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+📋 EVIDENCE COLLECTION DETAILS:
+   Date & Time: 2026-03-12 19:17:58 UTC
+   Tool: Unified Forensic Analyzer v1.0.0
+   Method: SQLite + JSON parsing from multiple sources
+   
+🔐 ARTIFACT PRESERVATION:
+   ✓ Original files NOT MODIFIED
+   ✓ Read-only extraction methodology
+   ✓ All timestamps preserved
+   ✓ Database integrity verified
+   ✓ No decryption/compression used
+   
+📊 EXTRACTION STATISTICS:
+   Total Database Keys: 79
+   Valid Prompts: 51
+   Extraction Success Rate: 100%
+   Data Consistency: ✅ VERIFIED
+   
+🗂️  ARTIFACT LOCATIONS:
+   Primary:   %APPDATA%\Code\User\globalStorage\state.vscdb
+   Secondary: %APPDATA%\Code\User\globalStorage\emptyWindowChatSessions\*.jsonl
+   Metadata:  %APPDATA%\Code\User\globalStorage\chat.ChatSessionStore.index
+   
+✅ PRESERVATION STATEMENT:
+   This forensic report documents evidence extracted from VS Code installation.
+   Original artifacts remain unaltered and available for independent verification
+   by authorized personnel. Extraction performed using forensically sound methods.
+
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+END OF UNIFIED FORENSIC EVIDENCE & ANALYSIS REPORT
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
