@@ -8,7 +8,7 @@ Perfect for security investigations, incident response, and digital forensics re
 
 ---
 
-⚠️ **The Problem**
+**The Problem**
 With the explosion of AI coding assistants like GitHub Copilot, developers are increasingly relying on AI to generate code, scripts, and solutions. However:
 
 *No Visibility*: Organizations have NO way to see what prompts their employees are sending to AI assistants
@@ -43,30 +43,30 @@ PromptTrace extracts and analyzes:
 
 ## Features
 
-✅ **Multi-Source Extraction**
+**Multi-Source Extraction**
 - JSONL chat session files
 - SQLite database files (state.vscdb)
 - Forensic dump artifacts
 - Chat session metadata
 
-✅ **Intelligent Deduplication**
+**Intelligent Deduplication**
 - Whitespace normalization
 - Hash-based duplicate detection
 - Priority-based source selection
 
-✅ **Threat Detection**
+**Threat Detection**
 - Reverse shell requests
 - Credential-related prompts
 - Malware development indicators
 - Custom keyword detection
 
-✅ **Professional Reporting**
+**Professional Reporting**
 - Executive summary with statistics
 - Detailed prompt listings
 - Source breakdown analysis
 - Chain of custody documentation
 
-✅ **Multiple Export Formats**
+**Multiple Export Formats**
 - Text reports (.txt)
 - JSON data (.json)
 - Structured forensic evidence
@@ -123,27 +123,27 @@ macOS:
 
 ---
 
-## 📋 Example Output
+## Example Output
 
 ```
 ════════════════════════════════════════════════════════════════════════════
 SECTION 1: EXECUTIVE SUMMARY
 ════════════════════════════════════════════════════════════════════════════
 
-📊 EXTRACTION RESULTS:
+EXTRACTION RESULTS:
   ✓ User Prompts Extracted: 51
   ✓ Chat Sessions Found: 4
   ✓ Unique Prompts (after dedup): 51
   ✓ Duplicates Removed: 0
 
-⚠️  THREAT INDICATORS FOUND:
+THREAT INDICATORS FOUND:
   [CRITICAL] Reverse Shell Requests: 5
   [HIGH] Credential-Related: 3
   [HIGH] Malware Topics: 3
   
   ➜ OVERALL RISK LEVEL: CRITICAL
 
-📈 STATISTICS:
+STATISTICS:
   Average Prompt Length: 705 characters
   Longest Prompt: 23492 characters
   Total Characters Extracted: 35,958
@@ -151,7 +151,7 @@ SECTION 1: EXECUTIVE SUMMARY
 
 ---
 
-## 🔐 Use Cases
+## Use Cases
 
 ### Incident Response
 - Investigate compromised systems
@@ -179,7 +179,7 @@ SECTION 1: EXECUTIVE SUMMARY
 
 ---
 
-## 📊 Report Sections
+## Report Sections
 
 **Section 1: Executive Summary**
 - Extraction statistics
@@ -207,7 +207,7 @@ SECTION 1: EXECUTIVE SUMMARY
 
 ---
 
-## ⚙️ Technical Details
+## Technical Details
 
 ### Architecture
 ```
@@ -259,7 +259,7 @@ Planned:
 
 ---
 
-## 📝 Requirements
+## Requirements
 
 ```
 Python 3.7+
@@ -274,7 +274,7 @@ No external dependencies required!
 
 ---
 
-## 📄 License
+## License
 
 MIT License - See LICENSE file for details
 
@@ -282,7 +282,7 @@ This tool is provided for authorized forensic analysis, incident response, and s
 
 ---
 
-## ⚖️ Legal & Ethics
+## Legal & Ethics
 
 **PromptTrace is designed for:**
 - ✅ Digital forensics investigations
@@ -311,7 +311,7 @@ Contributions welcome!
 
 ---
 
-## 🐛 Issues & Bugs
+## Issues & Bugs
 
 Found a bug? Have a feature request?
 
@@ -325,7 +325,7 @@ Include:
 
 ---
 
-## 📚 References
+## References
 
 - [VS Code User Data Directory Structure](https://code.visualstudio.com/docs)
 - [SQLite Database Format](https://www.sqlite.org/)
@@ -334,13 +334,13 @@ Include:
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **PromptTrace** created as an open-source DFIR research tool.
 
 ---
 
-## 📮 Contact & Support
+## Contact & Support
 
 For questions, suggestions, or collaboration:
 - Open an issue on GitHub
@@ -349,7 +349,7 @@ For questions, suggestions, or collaboration:
 
 ---
 
-## 🌟 Show Your Support
+## Show Your Support
 
 If this tool was helpful for your forensic investigation:
 - ⭐ Star this repository
