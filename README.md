@@ -1,4 +1,4 @@
-# PromptTrace 🔍
+# PromptTrace
 
 ## Digital Forensics & Incident Response (DFIR) Tool for AI Assistant Artifacts
 
@@ -8,7 +8,29 @@ Perfect for security investigations, incident response, and digital forensics re
 
 ---
 
-## 🎯 What It Does
+⚠️ **The Problem**
+With the explosion of AI coding assistants like GitHub Copilot, developers are increasingly relying on AI to generate code, scripts, and solutions. However:
+
+*No Visibility*: Organizations have NO way to see what prompts their employees are sending to AI assistants
+*Security Blind Spot:* Sensitive data (credentials, API keys, company secrets) could be leaked to AI APIs without detection
+*Compliance Issues:* GDPR, HIPAA, and other regulations require audit trails - but AI assistant usage is invisible
+Incident Response Gap: When a security incident occurs, investigators can't determine if AI-generated malicious code was involved
+*Logs Hidden:* GitHub Copilot and similar tools don't provide logs or activity history - usage is completely opaque
+
+**Real Scenario:**
+Employee runs: "write a script to extract Windows credentials"
+↓
+GitHub Copilot generates malicious code
+↓
+Employee executes it
+↓
+System compromised
+↓
+No audit trail. No logs. No visibility. No way to prove what happened.
+
+---
+
+## What It Does
 
 PromptTrace extracts and analyzes:
 - **User Prompts** - All queries sent to AI assistants
@@ -19,7 +41,7 @@ PromptTrace extracts and analyzes:
 
 ---
 
-## 📊 Features
+## Features
 
 ✅ **Multi-Source Extraction**
 - JSONL chat session files
@@ -51,7 +73,7 @@ PromptTrace extracts and analyzes:
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.7+
@@ -79,7 +101,7 @@ python prompttrace.py
 
 ---
 
-## 📁 Artifact Locations
+## Artifact Locations
 
 PromptTrace automatically scans:
 
