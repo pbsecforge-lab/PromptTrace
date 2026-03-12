@@ -299,7 +299,7 @@ This tool is provided for authorized forensic analysis, incident response, and s
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome!
 
@@ -352,17 +352,17 @@ For questions, suggestions, or collaboration:
 ## Show Your Support
 
 If this tool was helpful for your forensic investigation:
-- ⭐ Star this repository
-- 🔗 Share with the DFIR community
-- 📢 Cite in your research
-- 🤝 Contribute improvements
+-  Star this repository
+-  Share with the DFIR community
+-  Cite in your research
+-  Contribute improvements
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This tool is provided "as-is" for authorized forensic analysis only. Users are responsible for ensuring compliance with all applicable laws and regulations. Unauthorized access to computer systems is illegal.
 
 ---
 
-**PromptTrace** - Extracting Evidence from AI Interactions 🔍
+**PromptTrace** - Extracting Evidence from AI Interactions 
