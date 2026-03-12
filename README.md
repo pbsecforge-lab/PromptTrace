@@ -244,7 +244,7 @@ Edit `prompttrace.py` and modify threat keywords:
 threat_flags = []
 text_lower = prompt['text'].lower()
 if 'your_keyword' in text_lower:
-    threat_flags.append("⚠️  YOUR_THREAT")
+    threat_flags.append("  YOUR_THREAT")
 ```
 
 ### Extending to Other Platforms
